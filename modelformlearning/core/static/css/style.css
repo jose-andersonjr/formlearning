@@ -22,7 +22,7 @@ section {
 
 .label-form {
     display: block;
-    background-color: red;
+    align-content: right;
     margin: 5px;
     text-align: right;
 }

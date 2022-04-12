@@ -11,23 +11,20 @@
 </head>
 <body>
     <header>
-        <h1>Insira seus dados no formulário abaixo:</h1>
     </header>
     <main class='container'>
         <section class="container-formularios">
-            <form method="post">
+            <form action="." method="post">
             {% csrf_token %}
-                <table>
-                    {% for field in form %}
-                    <div class="label-form">
-                        {{ field.label_tag }}
-                        {{ field }}
-                        {{ field.errors }}
-                    </div>
-                    {% endfor %}
-                </table>
+                {% for field in form %}
+                <div class="label-form">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {{ field.errors }}
+                </div>
+                {% endfor %}
             </form>
-            <input type="submit" value="Enviar formulário">
+            <input class="primary-button" type="submit" value="Enviar formulário">
         </section>
 
     </main>

@@ -20,7 +20,7 @@ class FormularioPrincipal(forms.Form): #o FormularioPrincipal herdará o atribut
     # Campos do formulário
     email = forms.EmailField(required=False)
     nome = forms.CharField(max_length=30)
-    sexo = forms.ChoiceField(choices=CHOICES_SEXO)
+    sexo = forms.ChoiceField(choices=CHOICES_SEXO, required=True)
     cor = forms.ChoiceField(choices=CHOICES_COR)
     idade = forms.IntegerField()
     data_nascimento = forms.DateField(required=False)

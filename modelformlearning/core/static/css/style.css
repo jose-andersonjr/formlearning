@@ -1,28 +1,72 @@
 * {
-    padding: 0;
-    margin: 0 0;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(199, 222, 213);
+    /* Formatação da página */
+    background-color: rgb(247, 247, 247);
     box-sizing: border-box;
+
+    /* Fonte */
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20;
+
 }
 
-header{
-    font-size: 16;
+ h1 {
+    background-color: #3db36b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    color: white;
+    padding: 15px;
     text-align: center;
+    border-bottom: 2px solid #09421f;
 }
 
 .container{
-    max-width: 1400px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 
 section {
-    border: 1px solid black;
+    background-color: rgb(255, 119, 0);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+}
+
+select, option {
+    color:black;
+}
+
+form, label {
+    background-color: rgb(255, 119, 0);
 }
 
 .label-form {
+    background-color: rgb(255, 119, 0);
     display: block;
-    align-content: right;
-    margin: 5px;
-    text-align: right;
+    margin: 25px;
+    color: black;
+
+}
+
+.label-form input{
+    color: black;
+
+}
+
+.primary-button {
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+    background-color: rgb(80, 148, 80);
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+
+.primary-button:hover{
+    background-color: #09421f;
 }

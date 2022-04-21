@@ -1,6 +1,5 @@
 * {
     /* Formatação da página */
-    background-color: rgb(247, 247, 247);
     box-sizing: border-box;
 
     /* Fonte */
@@ -45,6 +44,7 @@ select, option {
 
 .label-form input{
     color: black;
+    border-radius: 10px;
 
 }
 
@@ -62,4 +62,28 @@ select, option {
 /*  Sombra no botão de envio  */
 .primary-button:hover{
     background-color: #09421f;
+}
+
+/* lista de erros das labels */
+.errorlist {
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.errorlist li {
+    color: black;
+}
+
+/* mensagem de sucesso */
+.alerta {
+    font-weight: 700;
+    text-align: center;
+    margin: 25px;
+    background-color: #09421f;
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

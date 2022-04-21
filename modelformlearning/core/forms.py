@@ -23,4 +23,4 @@ class FormularioPrincipal(forms.Form): #o FormularioPrincipal herdará o atribut
     sexo = forms.ChoiceField(choices=CHOICES_SEXO, required=True)
     cor = forms.ChoiceField(choices=CHOICES_COR)
     idade = forms.IntegerField()
-    data_nascimento = forms.DateField(required=False)
+    data_nascimento = forms.DateField(required=False, error_messages={'invalid': "Insira uma data no formato DD/MM/AAAA"})

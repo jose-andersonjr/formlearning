@@ -1,6 +1,9 @@
 * {
     /* Formatação da página */
+<<<<<<< .merge_file_a10064
     background-color: rgb(247, 247, 247);
+=======
+>>>>>>> .merge_file_a02732
     box-sizing: border-box;
 
     /* Fonte */
@@ -10,6 +13,7 @@
     font-size: 20;
 
 }
+<<<<<<< .merge_file_a10064
 
  h1 {
     background-color: #3db36b;
@@ -23,27 +27,39 @@
     border-bottom: 2px solid #09421f;
 }
 
+=======
+ /* Onde está todo o conteúdo da página */
+>>>>>>> .merge_file_a02732
 .container{
     padding: 80px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
+<<<<<<< .merge_file_a10064
 
+=======
+/* Parte da página onde o formulário está */
+>>>>>>> .merge_file_a02732
 section {
     background-color: rgb(255, 119, 0);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 10px;
 }
 
+<<<<<<< .merge_file_a10064
 select, option {
     color:black;
 }
 
+=======
+/* O formulário propriamento dito e as dentro do label-form */
+>>>>>>> .merge_file_a02732
 form, label {
     background-color: rgb(255, 119, 0);
 }
 
+<<<<<<< .merge_file_a10064
 .label-form {
     background-color: rgb(255, 119, 0);
     display: block;
@@ -52,6 +68,17 @@ form, label {
     margin: 5px;
     text-align: right;
 =======
+=======
+/* Opções dentro das labels idade e sexo  */
+select, option {
+    color:black;
+}
+
+/* Labels do formulário */
+.label-form {
+    background-color: rgb(255, 119, 0);
+    display: block;
+>>>>>>> .merge_file_a02732
     margin: 25px;
     color: black;
 
@@ -59,9 +86,17 @@ form, label {
 
 .label-form input{
     color: black;
+<<<<<<< .merge_file_a10064
 
 }
 
+=======
+    border-radius: 10px;
+
+}
+
+/* Botão de envio */
+>>>>>>> .merge_file_a02732
 .primary-button {
     display: block;
     border-radius: 5px;
@@ -72,7 +107,37 @@ form, label {
     
 }
 
+<<<<<<< .merge_file_a10064
 .primary-button:hover{
     background-color: #09421f;
 >>>>>>> 5a70570 (Modificações no arquivo css para melhor visualização do formulário)
+=======
+/*  Sombra no botão de envio  */
+.primary-button:hover{
+    background-color: #09421f;
+}
+
+/* lista de erros das labels */
+.errorlist {
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.errorlist li {
+    color: black;
+}
+
+/* mensagem de sucesso */
+.alerta {
+    font-weight: 700;
+    text-align: center;
+    margin: 25px;
+    background-color: #09421f;
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+>>>>>>> .merge_file_a02732
 }

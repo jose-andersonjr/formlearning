@@ -6,9 +6,17 @@ from modelformlearning.core.forms import FormularioPrincipal
 
 # Create your views here.
 def formulario(request):
-    form = FormularioPrincipal()
-    context = {
-        'form':form
-    }
     template_name='formulario.html'
-    return render(request, template_name, context=context)
+    if request.method == "POST":
+        form = FormularioPrincipal(request.POST)
+        print(form.data['nome'])
+        context = {
+            'form':form
+        }
+        return render(request, template_name, context=context)
+    else:
+        form = FormularioPrincipal()
+        context = {
+            'form':form
+        }
+        return render(request, template_name, context=context)

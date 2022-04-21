@@ -48,6 +48,7 @@ select, option {
 
 }
 
+/* Botão de envio */
 .primary-button {
     display: block;
     border-radius: 5px;
@@ -58,6 +59,7 @@ select, option {
     
 }
 
+/*  Sombra no botão de envio  */
 .primary-button:hover{
     background-color: #09421f;
 }
